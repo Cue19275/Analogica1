@@ -1,0 +1,6 @@
+*.pyc
+*.log
+*.net
+*.raw
+_generated.asc*
+data

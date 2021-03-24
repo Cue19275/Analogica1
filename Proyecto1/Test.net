@@ -1,0 +1,15 @@
+* C:\Users\Carlo\OneDrive\Documentos\AnalogicaPRJ1\Analogica1\Proyecto1\Test.asc
+V1 N002 0 wavefile=prueba.wav
+R1 N001 N002 {R}
+R2 N003 N001 {R}
+C1 N003 0 {C1}
+C2 out N001 {C2}
+XU1 N003 out VCC VEE out LT1001
+V2 VCC 0 12
+V3 VEE 0 -12
+.tran 10
+.wave "C:\Users\Carlo\OneDrive\Documentos\AnalogicaPRJ1\Analogica1\Proyecto1\salida.wav" 8 8k V(out)
+.include param.txt
+.lib LTC.lib
+.backanno
+.end
